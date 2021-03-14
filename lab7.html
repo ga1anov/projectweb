@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Веб-технологии Галанов Иван</title> 
+	<style>
+	body {
+	background: #667a8e; /* Цвет фона и путь к файлу */
+	color: #fff; /* Цвет текста */
+	}
+	</style>
+	<script language="JavaScript">
+	function subjects() {		
+	urok = new Array("история","философия","география","мат. анализ","химия","эконометрика");		
+	document.write("Гуманитарные науки:"+ urok.slice(0,3) +"<br>");				
+	document.write("Точные науки:"+ urok.slice(3) +" <br>");					
+	}		
+	</script>		
+</head>
+<body>
+	<h4>Галанов И.С.</h4>
+	<h1>Задание 7</h1>
+		<script language="JavaScript">
+			year=new Array("декабрь","январь","февраль","март","апрель","май","июнь","июль","август","сентябрь","октябрь","ноябрь");			
+			summer=new Array();			
+			summer=year.slice(6,9);			
+			document.write(summer+" <br>");			
+			subjects();			
+			</script> 
+</body>
+</html>
