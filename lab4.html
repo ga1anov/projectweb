@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Веб-технологии Галанов Иван</title> 
+	<style>
+	body {
+	background: #667a8e; /* Цвет фона и путь к файлу */
+	color: #fff; /* Цвет текста */
+	}
+	</style>
+</head>
+<body>
+<h4>Галанов И.С.</h4>
+<h1>Задание 4</h1>
+		<script language="JavaScript">
+			var x, y;
+			password = 1;
+			password1 = prompt("Введите пароль",'');
+			if(password1 == password){ 
+				alert("Пароль верен"); }
+			else{ 
+				alert("Пароль не верен"); }
+			x = parseInt(prompt("Введите значение х",'')); // метод parseInt() переводит строку в целое
+			y = parseInt(prompt("Введите значение у",'')); // число
+			if(x<y) { alert("Максимальное число - y"); }
+			else if(x>y) { 
+				alert("Максимальное число - x"); 
+			}
+			else if(x=y){ 
+				alert("Введенные числа равны");
+			}
+			</script>
+</body>
+</html>
