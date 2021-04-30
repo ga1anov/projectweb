@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Веб-технологии Галанов Иван</title> 
+	<style>
+	body {
+	background: #667a8e; /* Цвет фона и путь к файлу */
+	color: #fff; /* Цвет текста */
+	}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+<h4>Галанов И.С.</h4>
+_________________________________________________________________________________________
+<h3>Россия приостановила авиасообщение с Турцией и Танзанией</h3>
+<p>Что нужно знать о закрытии полетов в популярные места отдыха у россиян?</p>
+<img src="https://icdn.lenta.ru/images/2021/04/09/20/20210409203704299/top7_1cca537f0d9eeb6f7609bed3f8e70ab6.jpg" alt=""><br>
+_________________________________________________________________________________________
+<br>
+_________________________________________________________________________________________
+<h3>«Иначе я перестану себя уважать»</h3>
+<p>Как знаменитая летчица боролась за права женщин, в одиночку перелетела Атлантику и погибла в небе</p>
+<img src="https://icdn.lenta.ru/images/2021/03/19/12/20210319125143487/top7_7c182a6fda67b37ecb0b2a63b5ddedd1.jpg" alt=""><br>
+_________________________________________________________________________________________
+<br>
+_________________________________________________________________________________________
+<h3>На вес золота</h3>
+<p>Сколько на самом деле стоят продукты в супермаркетах России, Европы и остального мира? Исследование</p>
+<img src="https://icdn.lenta.ru/images/2021/03/09/16/20210309161709938/top7_3572521eb59db9721c009f0ab1bf0dcf.jpg" alt=""><br>
+_________________________________________________________________________________________
+<br>
+_________________________________________________________________________________________
+<h3>Центр притяжения</h3>
+<p>Как столица Поволжья превращается в российскую Кремниевую долину</p>
+<img src="https://icdn.lenta.ru/images/2021/04/22/11/20210422114641825/top7_34ee5f00b5b088db96fb3aa80997b7e7.jpg" alt=""><br>
+_________________________________________________________________________________________
+<br> 
+_________________________________________________________________________________________
+<h3>Достучаться до небес</h3>
+<p>10 самых необычных небоскребов будущего. Где их построят?</p>
+<img src="https://icdn.lenta.ru/images/2021/03/04/22/20210304222430878/top7_4a8005cae2257d7fb8102db408487183.jpg" alt=""><br>
+_________________________________________________________________________________________
+<br> 
+</div>
+<script type="text/javascript">
+	let tek = 5;
+			function fff(str) {
+				if (str.length==0) {
+    document.getElementById("ffff").innerHTML="";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("ffff").innerHTML=this.responseText;
+    }
+  }
+			   xmlhttp.open("GET","ajax.items.php?tek="+tek,true);
+			   xmlhttp.send();
+			   tek+=5;
+			}
+		 </script>
+	<span id = "ffff"></span>
+	<form>
+		<input onclick = "fff(this.value)" type="button" value="загрузить" id="b">
+	</form>
+</body>
+</html>
