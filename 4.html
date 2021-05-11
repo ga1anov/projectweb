@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Веб-технологии Галанов Иван</title> 
+	<style>
+	body {
+	background: #667a8e; /* Цвет фона и путь к файлу */
+	color: #fff; /* Цвет текста */
+	}
+	</style>
+	<link rel="stylesheet" href="jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+	<script src="jquery-ui.js"></script>
+</head>
+<body>
+<h4>Галанов И.С.</h4>
+<h1>Лабораторная работа №4</h1>
+<h4>Плагины jQuery. Работа с библиотекой jQuery UI</h4>
+<h4>Вариант 6 - перечень вакансий и форма подачи резюме</h4>
+<h4>Перечень самых необычных вакансий:</h4>
+<span id="accordion" >
+	<h2 class="to">Тестирование матрасов — назад в счастливое детство</h2> <div style="height: 600px;">
+	  <p><span style="font-weight: 700;">Тестировщик матрасов</span><br><br>				
+		Будучи беззаботными детьми, многие из нас любили прыгать на кровати, за что нередко получали выговор от взрослых. 
+		Так вот, сейчас есть такая возможность вернуться к детской забаве, не получая нагоняя от родителей. 
+		Для этого достаточно стать тестировщиком матрасов на фабрике по их производству, как это сделал Рубен Рейносо.
+		Теперь он имеет возможность целыми днями прыгать на матрасах, и еще получать за это заработную плату <br><br>
+		<button class="button1">Стать тестировщиком</button></p>
+	</div>
+	<h2 class="to" >Составитель предсказаний для печенья</h2> 
+	<div>
+	  <p><span style="font-weight: 700;">Составитель предсказаний для печенья</span><br><br>				
+		Вкусные печенюшки с предсказаниями будущего пользуются большой популярностью во всем мире. 
+		Однако, редко кто задумывается о том, откуда берутся эти самые пророчества. Оказалось, существует такая профессия, хотя и очень редкая. 
+		Автор должен иметь богатую фантазию, хороший слог и эрудицию. Иначе, как получится выдавать десятки и даже сотни интересных и интригующих предсказаний?!
+		<br><br>
+		<button class="button2">Стать предсказателем</button></p> </p>
+	</div> 
+	 <h2 class="to" >Стояльщик в очереди</h2> 
+	 <div >	
+	<p><span style="font-weight: 700; ">Стояльщик в очереди</span><br>  <br> 
+		Особую находчивость проявила одна британская фирма. Ее сотрудники решили избавить соотечественников от необходимости стоять в очередях. 
+		За умеренную плату — около $40 в час, «стояльщики» обещают заменить вас в очереди на необходимое время. 
+		Если учесть, что в среднем каждый британец около года стоит в очереди в течение своей жизни, то эта услуга может стать очень востребованной.
+		<br><br>
+	  <button class="button3">Постоять в очереди</button></p> 
+	 </div>
+	</span>
+	<div id="dialog2" title="Форма подачи резюме">
+        <h3>Стать предсказателем</h3>
+        <form>
+         Фамилия: <input type="text"><br><br>
+		 Имя: <input type="text"><br><br>
+		 Отчество: <input type="text"><br><br>
+		 email: <input type="text"><br><br>
+		 Возраст: <p style="display: inline;" class="sliderValue2"></p>
+		 <br><br>
+		 <div class="slider2" style="width: 100%;"></div> <br>
+         Город: <input type="text"  class="city"><br><br>
+		 Стаж: <input type="text" id="stazh2"><br><br>
+          Дата подачи резюме:  <input type="text"  class="date"><br><br>
+          <label for="zp2">Расчет ЗП: </label><input type="text" id="zp2" title="Нажмите сюда и появится ваша будущая зарплата!"><br><br>
+        </form>
+        <input type="button" class="otpr" value="Отправить">
+      </div>
+	  <div id="dialog1" title="Форма подачи резюме">
+        <h3>Стать тестировщиком</h3>
+        <form>
+         Фамилия: <input type="text"><br><br>
+		 Имя: <input type="text"><br><br>
+		 Отчество: <input type="text"><br><br>
+		 email: <input type="text"><br><br>
+		 Возраст: <p style="display: inline;" class="sliderValue1"></p>
+		 <br><br>
+		 <div class="slider1" style="width: 100%;"></div> <br>
+         Город: <input type="text"  class="city"><br><br>
+		 Стаж: <input type="text" id="stazh1"><br><br>
+          Дата подачи резюме:  <input type="text"  class="date"><br><br>
+		  <label for="zp1">Расчет ЗП: </label><input type="text" id="zp1" title="Нажмите сюда и появится ваша будущая зарплата!"><br><br>        </form>
+        <input type="button" class="otpr" value="Отправить">
+      </div>
+	  <div id="dialog3" title="Форма подачи резюме">
+        <h3>Стать человеком в очереди</h3>
+        <form>
+         Фамилия: <input type="text"><br><br>
+		 Имя: <input type="text"><br><br>
+		 Отчество: <input type="text"><br><br>
+		 email: <input type="text"><br><br>
+		 Возраст: <p style="display: inline;" class="sliderValue3"></p>
+		 <br><br>
+		 <div class="slider3" style="width: 100%;"></div> <br>
+         Город: <input type="text"  class="city"><br><br>
+		 Стаж: <input type="text" id="stazh3"><br><br>
+          Дата подачи резюме:  <input type="text"  class="date"><br><br>
+		  <label for="zp3">Расчет ЗП: </label><input type="text" id="zp3" title="Нажмите сюда и появится ваша будущая зарплата!"><br><br>        </form>
+        <input type="button" class="otpr" value="Отправить">
+      </div>
+	  <div class="dia" title="Отправка резюме">Резюме отправлено!</div>
+	  <div class="ok" title="Спасибо!">Надеемся, вы найдете свою работу мечты</div>
+<script type="text/javascript">
+    $(function(){
+		$("#accordion" ).accordion({  collapsible: true });
+		$('#dialog1').dialog({ autoOpen: false, width: 500 });
+      	$('#dialog2').dialog({ autoOpen: false, width: 500 });
+      	$('#dialog3').dialog({ autoOpen: false, width: 500 });
+		  $.datepicker.regional['ru'] = {
+	closeText: 'Закрыть',
+	prevText: 'Предыдущий',
+	nextText: 'Следующий',
+	currentText: 'Сегодня',
+	monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+	monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+	dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+	dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+	dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+	weekHeader: 'Не',
+	dateFormat: 'dd.mm.yy',
+	firstDay: 1,
+	isRTL: false,
+	showMonthAfterYear: false,
+	yearSuffix: ''
+};
+	$.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+		  $(".date").datepicker({ });
+		$(".button1").click(function(){ 
+        $( "#dialog1" ).dialog('open'); 
+      })
+      $(".button2").click(function(){ 
+        $( "#dialog2" ).dialog('open'); 
+      })
+      $(".button3").click(function(){ 
+        $( "#dialog3" ).dialog('open'); 
+      })
+	  var city = ["Уфа", "Казань", "Санкт-Петербург", "Москва", "Геленджик", "Сочи", "Тверь", "Стерлитамак", "Бирск", "Белебей", "Ставрополь"]; 
+	  $(".city" ).click(function(){
+		$(".city").autocomplete({ source: city });
+	}); 
+	$('.slider1').slider({
+		    min: 18,
+	    	max: 65,
+        change: function (event, ui){
+            var val = $('.slider1').slider('value');
+            $('.sliderValue1').html(val);
+        }
+    });
+	$('.slider2').slider({
+		    min: 18,
+	    	max: 65,
+        change: function (event, ui){
+            var val = $('.slider2').slider('value');
+            $('.sliderValue2').html(val);
+        }
+    });
+	$('.slider3').slider({
+		    min: 18,
+	    	max: 65,
+        change: function (event, ui){
+            var val = $('.slider3').slider('value');
+            $('.sliderValue3').html(val);
+        }
+    });
+	$("#zp1" ).click(function(){
+    var k = document.getElementById('stazh1').value;
+    if (k<=2){
+      var zp = 1000*(1+k/10);
+    }
+    if (k>2 && k<5){
+      var zp = 1200*(1+k/10);
+    }
+    if (k>=5){
+      var zp = 1250*(1+k/10);
+    }
+    document.getElementById('zp1').value = zp+ ' $';
+  })
+  $("#zp2" ).click(function(){
+    var k = document.getElementById('stazh2').value;
+    if (k<=2){
+      var zp = 500*(1+k/10);
+    }
+    if (k>2 && k<5){
+      var zp = 700*(1+k/10);
+    }
+    if (k>=5){
+      var zp = 1050*(1+k/10);
+    }
+    document.getElementById('zp2').value = zp+ ' $';
+  })
+  $("#zp3" ).click(function(){
+    var k = document.getElementById('stazh2').value;
+    if (k<=2){
+      var zp = 900*(1+k/10);
+    }
+    if (k>2 && k<5){
+      var zp = 1000*(1+k/10);
+    }
+    if (k>=5){
+      var zp = 1100*(1+k/10);
+    }
+    document.getElementById('zp3').value = zp+ ' $';
+  })
+  $( function() {
+    $( document ).tooltip();
+  } );
+  $(".otpr" ).click(function(){
+		$('.dia').dialog('open'); })
+	$('.dia').dialog({ autoOpen: false, width: 300, buttons:{
+        "ок": function(){ $( ".ok" ).dialog('open'),$('.dia').dialog('close');   }
+    }})
+	$( ".ok" ).dialog({autoOpen: false, width: 300}); 
+	})
+
+	</script>
+</body>
+</html>
